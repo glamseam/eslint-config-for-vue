@@ -1,6 +1,6 @@
 {
-    "name": "@glamseam/eslint-config-for-vue",
-    "version": "0.2.1",
+    "name": "@d-gs/eslint-config-for-vue",
+    "version": "0.2.3",
     "description": "Eslint Config For Vue.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -9,17 +9,21 @@
     ],
     "author": "__d",
     "license": "MIT",
-    "keywords": [],
+    "keywords": [
+        "eslint",
+        "config",
+        "vue"
+    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/glamseam/eslint-config-for-vue"
+        "url": "git+https://github.com/glamseam/eslint-config-for-vue.git"
     },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/glamseam"
+    "bugs": {
+        "url": "https://github.com/glamseam/eslint-config-for-vue/issues"
     },
     "scripts": {
         "build": "tsc",
-        "pub": "npm run build && npm publish"
+        "pub": "npm run build && npm publish --access=public"
     },
     "peerDependencies": {
         "eslint": "^8.0.0"
