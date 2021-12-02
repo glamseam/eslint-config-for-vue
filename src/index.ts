@@ -36,6 +36,17 @@ export = {
         'vue/return-in-computed-property': 'off',
         // Priority A
         'vue/multi-word-component-names': 'off',
+        // Priority B
+        'vue/max-attributes-per-line': [
+            'warn',
+            {
+                'singleline': 1,
+                'multiline': {
+                    'max': 1,
+                    'allowFirstLine': false
+                }
+            }
+        ],
         // Priority C
         'vue/component-tags-order': [
             'error',
