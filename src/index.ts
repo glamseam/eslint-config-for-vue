@@ -5,10 +5,17 @@ export = {
         'plugin:vue/vue3-recommended'
     ],
     globals: {
-        'defineEmits': false,
-        'defineExpose': false,
-        'defineProps': false,
-        'withDefaults': false
+        'defineEmits': 'readonly',
+        'defineExpose': 'readonly',
+        'defineProps': 'readonly',
+        'withDefaults': 'readonly',
+        "$": "readonly",
+        "$$": "readonly",
+        "$ref": "readonly",
+        "$computed": "readonly",
+        "$shallowRef": "readonly",
+        "$customRef": "readonly",
+        "$toRef": "readonly"
     },
     rules: {
         'vue/html-indent': [
