@@ -9,13 +9,13 @@ export = {
         'defineExpose': 'readonly',
         'defineProps': 'readonly',
         'withDefaults': 'readonly',
-        "$": "readonly",
-        "$$": "readonly",
-        "$ref": "readonly",
-        "$computed": "readonly",
-        "$shallowRef": "readonly",
-        "$customRef": "readonly",
-        "$toRef": "readonly"
+        '$': 'readonly',
+        '$$': 'readonly',
+        '$ref': 'readonly',
+        '$computed': 'readonly',
+        '$shallowRef': 'readonly',
+        '$customRef': 'readonly',
+        '$toRef': 'readonly'
     },
     rules: {
         'vue/html-indent': [
@@ -54,6 +54,9 @@ export = {
                 ]
             }
         ],
-        'vue/no-v-html': ['warn']
+        'vue/no-v-html': ['warn'],
+        // Uncategorized
+        'vue/no-undef-components': ['error'],
+        'vue/no-v-text-v-html-on-component': ['error']
     }
 }
