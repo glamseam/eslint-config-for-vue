@@ -56,7 +56,15 @@ export = {
         ],
         'vue/no-v-html': ['warn'],
         // Uncategorized
-        'vue/no-undef-components': ['error'],
+        'vue/no-undef-components': [
+            'error',
+            {
+                'ignorePatterns': [
+                    'RouterLink',
+                    'RouterView'
+                ]
+            }
+        ],
         'vue/no-v-text-v-html-on-component': ['error']
     }
 }
