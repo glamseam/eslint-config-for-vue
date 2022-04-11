@@ -1,6 +1,6 @@
 {
     "name": "@d-gs/eslint-config-for-vue",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "description": "Eslint Config For Vue.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -30,11 +30,11 @@
         "eslint": "^8.0.0"
     },
     "devDependencies": {
-        "eslint": "^8.9.0",
+        "eslint": "^8.13.0",
         "rimraf": "^3.0.2",
-        "typescript": "^4.5.5"
+        "typescript": "^4.6.3"
     },
     "dependencies": {
-        "eslint-plugin-vue": "^8.4.1"
+        "eslint-plugin-vue": "^8.6.0"
     }
 }
