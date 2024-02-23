@@ -24,7 +24,7 @@
     "scripts": {
         "prebuild": "rimraf ./dist",
         "build": "tsc",
-        "pub": "npm run build && npm publish --access=public"
+        "pub": "pnpm build && npm publish --access=public"
     },
     "peerDependencies": {
         "eslint": "^8.0.0"
