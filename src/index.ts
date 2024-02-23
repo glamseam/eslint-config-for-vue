@@ -4,18 +4,20 @@ export = {
         // 'plugin:vue/vue3-strongly-recommended',
         'plugin:vue/vue3-recommended'
     ],
+    parser: 'vue-eslint-parser',
+    parserOptions: {
+        parser: '@typescript-eslint/parser',
+        sourceType: 'module',
+        extraFileExtensions: ['.vue'],
+        ecmaFeatures: {
+            jsx: true
+        }
+    },
     globals: {
-        'defineEmits': 'readonly',
-        'defineExpose': 'readonly',
-        'defineProps': 'readonly',
-        'withDefaults': 'readonly',
-        '$': 'readonly',
-        '$$': 'readonly',
-        '$ref': 'readonly',
-        '$computed': 'readonly',
-        '$shallowRef': 'readonly',
-        '$customRef': 'readonly',
-        '$toRef': 'readonly'
+        defineEmits: 'readonly',
+        defineExpose: 'readonly',
+        defineProps: 'readonly',
+        withDefaults: 'readonly'
     },
     rules: {
         'vue/html-indent': [
